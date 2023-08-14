@@ -2,7 +2,7 @@
 
 # 1. Phiên bản cài đặt để chạy được dự án:
 - Ruby: 3.2.2
-- Rails: 7.0.5
+- Rails: 7.0.7
 - MySQL
 
 # 2. Hướng dẫn cài dự án:
