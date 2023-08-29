@@ -1,0 +1,22 @@
+vi:
+  title:
+    commontitle: 'Hướng dẫn cơ bản với Rails'
+    home: 'Trang chủ'
+    help: 'Trợ giúp'
+    header: 'Ứng dụng đơn giản'
+  navbar:
+    home: 'Trang chủ'
+    help: 'Trợ giúp'
+    login: 'Đăng Nhập'
+  user:
+    home:
+      wellcomheader: 'Chào mừng đến với App siu đơng giản'
+      singupnow: 'Đăng ký ngay bây giờ !'
+      projectname: 'Hướng dẫn Ruby on Rails'
+      pagefor : 'Đây là trang chủ của'
+      simpleapp: 'ứng dụng hướng dẫn'
+    help:
+      gethelpform: 'Lấy hướng dẫn tutorial tại'
+      linkgethelp: 'Trang hướng dẫn Rails'
+      getsplapp: 'Lấy sách về ứng dụng rails đươn giản tại'
+      linkbook: 'Sách Ruby on Rails Tutorial'
