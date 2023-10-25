@@ -1,33 +1,36 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t "hello"
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t("hello") %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   "true": "foo"
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  title:
+    commontitle: 'Ruby on Rails Tutorial Sample App'
+    home: 'Home'
+    help: 'Help'
+    header: 'Simple App'
+  navbar:
+    home: 'Home'
+    help: 'Help'
+    login: 'Login'
+  user:
+    home:
+      wellcomheader: 'Welcome to the Sample App'
+      singupnow: 'Sign up now !'
+      projectname: 'Ruby on Rails Tutorial'
+      pagefor : 'This is the home page for the'
+      simpleapp: 'sample application.'
+    help:
+      gethelpform: 'Get help in the Ruby on Rails Tutorial at the'
+      linkgethelp: 'Rails Tutorial help page'
+      getsplapp: 'TO get help on this sample app, see the'
+      linkbook: 'Ruby on Rails Tutorial book'
+  sign_up: "Sign In"
+  sign_in: "Sign Up"
+  name_field: "Name"
+  email_field: "Email Address"
+  password: "Password"
+  password_repeat: "Password Repeat"
+  success_sign_up: "Sign up Successfully"
+  total_error: "Errors validate in your submit"
+  back_to_users: "Back To Users"
+  update_user : "Update this user"
+  deleted_user : "Deleted"
+  show_this_user : "Show"
+  add_new_user : "Add user"
+  detail_title: "Detail user"
