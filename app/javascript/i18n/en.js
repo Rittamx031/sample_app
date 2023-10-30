@@ -77223,7 +77223,10 @@ I18n.translations["en"] = I18n.extend((I18n.translations["en"] || {}), {
     "oversize": "should be less than 5MB",
     "validimage": "must be a valid image format"
   },
+<<<<<<< HEAD
   "micropost_feed": "Micropost Feed",
+=======
+>>>>>>> 266fa59 (chapter13)
   "name_field": "Name",
   "navbar": {
     "help": "Help",
@@ -77319,7 +77322,10 @@ I18n.translations["en"] = I18n.extend((I18n.translations["en"] || {}), {
     "title": "Reset password"
   },
   "placeholder_post_message": "Compose new micropost...",
+<<<<<<< HEAD
   "post": "Post",
+=======
+>>>>>>> 266fa59 (chapter13)
   "posted_ago": "Posted %{time_ago} ago.",
   "profile": "Profile",
   "rememberme": "Remember me",

@@ -8,7 +8,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @page, @feed_items = pagy(@user.microposts.newest,
+    @page, @feed_items = pagy(@user.microposts.recent_posts,
                               items: Settings.items_in_page)
   end
 

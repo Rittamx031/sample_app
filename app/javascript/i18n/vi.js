@@ -533,7 +533,10 @@ I18n.translations["vi"] = I18n.extend((I18n.translations["vi"] || {}), {
     "title": "Đặt lại mật khẩu"
   },
   "placeholder_post_message": "Viết thêm suy nghĩ của bạn...",
+<<<<<<< HEAD
   "post": "Đăng",
+=======
+>>>>>>> 266fa59 (chapter13)
   "posted_ago": "Đăng lên %{time_ago} trước.",
   "profile": "Thông tin cá nhân",
   "rememberme": "Lưu thông tin đăng nhập",
