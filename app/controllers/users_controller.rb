@@ -18,6 +18,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      @user.send_activation_email
+      flash[:info] = t("checkmail")
       reset_session
       log_in @user
       flash[:success] = t("success_sign_up")

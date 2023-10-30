@@ -7,7 +7,7 @@ en:
   navbar:
     home: "Home"
     help: "Help"
-    login: "Login"
+    login: "Log in"
   user:
     home:
       wellcomheader: "Welcome to the Sample App"
@@ -49,3 +49,22 @@ en:
   user_deleted: "user haved been deleted successfully!"
   delete_fail: "Cann't delete user, try again!"
   confirm: "You want to continue"
+  not_found_user: "Not Found user"
+  update_success: "Update user successfully"
+  back_to_login: "Please login"
+  loggouted: "You was log out"
+  success_sign_in: "Sign up Successfully"
+  account_not_actived: "Account not active, Check Mail"
+  welcome: "Welcome to that's App rails mail"
+  clicktoactive: "Click below link to active your account"
+  hrefActive: "Click here"
+  checkmail: "Please check your email to activate your account"
+  accountacitive: "Account acitive!"
+  Invalidaccountacitive: "Invalid activation  link"
+  email_activation:
+    subject: "Welcome to the Sample App!"
+    intro: "Hi %{name}, Welcome to the Sample App!"
+    activation_link: "Click on the link below to activate your account:"
+    welcome_message: "Welcome to the Sample App, %{name}!"
+    activation_instructions: "Click on the following link to activate your account:"
+    activenow: "Click Here"
