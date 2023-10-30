@@ -1,9 +1,26 @@
-<% provide :title, t("title.home")%>
-<div class="center jumbotron">
-  <h1><%= t("user.home.wellcomheader") %></h1>
-  <h2><%= t("user.home.pagefor")%>
-    <a href=""><%= t("user.home.projectname")%></a>
-    <%= t("user.home.simpleapp")%>
-  </h2>
-  <%= link_to t("user.home.singupnow"),signup_path ,class: "btn btn-lg btn-primary"%>
-</div>
+<% provide :title, t("title.home") %>
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render "shared/user_info" %>
+      </section>
+      <section class="micropost_form">
+        <%= render "shared/micropost_form" %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h3><%= t("micropost_feed")%></h3>
+      <%= render "shared/feed" %>
+    </div>
+  </div>
+<% else %>
+  <div class="center jumbotron">
+    <h1><%= t("user.home.wellcomheader") %></h1>
+    <h2><%= t("user.home.pagefor") %>
+      <a href="<%= signup_url %>"><%= t("user.home.projectname") %></a>
+      <%= t("user.home.simpleapp") %>
+    </h2>
+    <%= link_to t("user.home.singupnow"), signup_url, class: "btn btn-lg btn-primary" %>
+  </div>
+<% end %>

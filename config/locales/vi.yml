@@ -89,3 +89,23 @@ vi:
   user_not_found: "Không tìm thấy người dùng!"
   user_inactive: "Người dùng không hoạt động!"
   password_reset_expired: "Đặt lại mật khẩu đã hết hạn."
+  micropost:
+    created: "Đã post thành công!"
+    deleted: "Micropost đã xóa"
+    deleted_fail: "Xóa không thành công"
+    validimage: "Ảnh không đúng định dạng"
+    oversize: "Ảnh phải nhỏ hơn 5MB"
+  activerecord:
+    errors:
+      messages:
+        record_invalid: "Không hợp lệ"
+  posted_ago: 'Đăng lên %{time_ago} trước.'
+  datetime:
+    distance_in_words:
+      x_minutes: "cách đây %{count} phút"
+  you_sure: "Bạn chắc chứ"
+  alert_limit_size: "file không vượt quá 5MB"
+  view_if: "Xem tài khoản của bạn"
+  placeholder_post_message: "Viết thêm suy nghĩ của bạn..."
+  post: "Đăng"
+  micropost_feed: "Bài đăng"

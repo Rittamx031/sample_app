@@ -8,3 +8,11 @@ min_length_password: 6
 default_email: "vuthat767@gmail.com"
 host: "localhost:3000"
 timeout: 2
+digit_140: 140
+digit_50: 50
+page_10: 10
+wight_size_500: 500
+high_size_500: 500
+limit_store_size: 5
+items_in_page: 10
+options_size_image: 80
