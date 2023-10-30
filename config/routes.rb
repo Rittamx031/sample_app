@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+  get 'sessions/create'
+  get 'sessions/destroy'
   scope "(:locale)", locale: /en|vi/ do
     resources :users
     resources :session
