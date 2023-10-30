@@ -1,5 +1,5 @@
-<%= t('email_activation.welcome_message', name: @user.name) %>
+<%= t("email_activation.welcome_message", name: @user.name) %>
 
-<%= t('email_activation.activation_instructions') %>
+<%= t("email_activation.activation_instructions") %>
 
-<%= edit_account_activation_url(id: @user.activation_digest, email: @user.email) %>
+<%= account_activation_url(id: @user.activation_digest, email: @user.email) %>

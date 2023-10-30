@@ -4,7 +4,6 @@ module SessionsHelper
     @current_user = user
   end
 
-  # Returns the current logged-in user (if any).
   def current_user
     if (user_id = session[:user_id])
       @current_user ||= User.find_by(id: user_id)

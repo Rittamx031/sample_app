@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    log_out # Custom method to log out the user
+    log_out
     redirect_to root_path, notice: t("logged_out")
   end
 

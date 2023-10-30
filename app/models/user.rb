@@ -9,20 +9,20 @@ class User < ApplicationRecord
                     format: {with: Regexp.new(Settings.email_regex)},
                     uniqueness: {case_sensitive: Settings.case_sensitive_email}
   validates :password, presence: true,
-length: {minimum: Settings.min_length_password}, allow_nil: true
+  length: {minimum: Settings.min_length_password}, allow_nil: true
 
   has_secure_password
 
-  attr_accessor :remember_token, :activation_token
+  attr_accessor :remember_token, :activation_token, :reset_token
 
   class << self
-    def digest string
+    def User.digest string
       cost = if ActiveModel::SecurePassword.min_cost
                BCrypt::Engine::MIN_COST
              else
                BCrypt::Engine.cost
              end
-      BCrypt::Password.create string, cost:
+      BCrypt::Password.create(string, cost:)
     end
 
     def new_token
@@ -54,6 +54,19 @@ length: {minimum: Settings.min_length_password}, allow_nil: true
     BCrypt::Password.new(digest).is_password?(token)
   end
 
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update_columns(reset_digest: User.digest(reset_token),
+                   reset_sent_at: Time.zone.now)
+  end
+
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_later
+  end
+
+  def password_reset_expired?
+    reset_sent_at < 2.hours.ago
+  end
   private
 
   def downcase_email

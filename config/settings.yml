@@ -3,7 +3,7 @@ max_name_length: 50
 max_email_length: 255
 email_regex: '\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z'
 case_sensitive_email: false
-image_user: 'images.png'
+image_user: "images.png"
 min_length_password: 6
 default_email: "vuthat767@gmail.com"
-host: "http://localhost:3000/"
+host: "localhost:3000"
