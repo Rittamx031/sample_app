@@ -1,0 +1,11 @@
+<div id="<%= dom_id user %>">
+  <%= gravatar_for(user)%>
+  <p>
+    <strong><%= t("name_field")%></strong>
+    <%= user.name %>
+  </p>
+  <p>
+    <strong><%= t("email_field")%></strong>
+    <%= user.email %>
+  </p>
+</div>
