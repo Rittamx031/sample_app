@@ -20,17 +20,25 @@ vi:
       linkgethelp: 'Trang hướng dẫn Rails'
       getsplapp: 'Lấy sách về ứng dụng rails đươn giản tại'
       linkbook: 'Sách Ruby on Rails Tutorial'
-  sign_up: "Đăng Ký"
-  sign_in: "Đăng Nhập"
-  name_field: "Tên"
-  email_field: "Địa chỉ Email"
-  password: "Mật khẩu"
-  password_repeat: "Nhập lại mật khẩu"
-  success_sign_up: "Đăng ký thành công"
-  total_error: "lỗi khi bạn gửi form"
-  back_to_users: "Danh sách Người dùng"
-  update_user : "Cập nhật thông tin người dùng"
-  deleted_user : "Xóa"
-  show_this_user : "Xem"
-  add_new_user : "Thêm nguời dùng"
-  detail_title: "Thông tin chi tiết"
+  sign_up: 'Đăng Ký'
+  sign_in: 'Đăng Nhập'
+  name_field: 'Tên'
+  email_field: 'Địa chỉ Email'
+  password: 'Mật khẩu'
+  password_repeat: 'Nhập lại mật khẩu'
+  success_sign_up: 'Đăng ký thành công'
+  total_error: 'lỗi khi bạn gửi form'
+  back_to_users: 'Danh sách Người dùng'
+  update_user : 'Cập nhật thông tin người dùng'
+  deleted_user : 'Xóa'
+  show_this_user : 'Xem'
+  add_new_user : 'Thêm nguời dùng'
+  detail_title: 'Thông tin chi tiết'
+  new_user: 'Chưa có tài khoản'
+  sign_up_now: 'Đăng ký ngay!'
+  login: 'Đăng Nhập'
+  logged_out: 'Đăng xuất'
+  logout: 'Đăng xuất'
+  invalid_email_password_combination: 'Kiểm tra lại tài khoản mật khẩu '
+  setting: 'Cài Đặt'
+  profile: 'Thông tin cá nhân'

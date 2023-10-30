@@ -7,7 +7,7 @@ en:
   navbar:
     home: 'Home'
     help: 'Help'
-    login: 'Login'
+    login: 'Log in'
   user:
     home:
       wellcomheader: 'Welcome to the Sample App'
@@ -20,17 +20,25 @@ en:
       linkgethelp: 'Rails Tutorial help page'
       getsplapp: 'TO get help on this sample app, see the'
       linkbook: 'Ruby on Rails Tutorial book'
-  sign_up: "Sign In"
-  sign_in: "Sign Up"
-  name_field: "Name"
-  email_field: "Email Address"
-  password: "Password"
-  password_repeat: "Password Repeat"
-  success_sign_up: "Sign up Successfully"
-  total_error: "Errors validate in your submit"
-  back_to_users: "Back To Users"
-  update_user : "Update this user"
-  deleted_user : "Deleted"
-  show_this_user : "Show"
-  add_new_user : "Add user"
-  detail_title: "Detail user"
+  sign_up: 'Sign In'
+  sign_in: 'Sign Up'
+  name_field: 'Name'
+  email_field: 'Email Address'
+  password: 'Password'
+  password_repeat: 'Password Repeat'
+  success_sign_up: 'Sign up Successfully'
+  total_error: 'Errors validate in your submit'
+  back_to_users: 'Back To Users'
+  update_user : 'Update this user'
+  deleted_user : 'Deleted'
+  show_this_user : 'Show'
+  add_new_user : 'Add user'
+  detail_title: 'Detail user'
+  new_user: 'new User'
+  sign_up_now: 'Sign Up Now!'
+  login: 'Login'
+  logged_out: 'Logged Out'
+  logout: 'Logged Out'
+  invalid_email_password_combination: 'invalid Email Password '
+  setting: 'Setting'
+  profile: 'Profile'

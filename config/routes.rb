@@ -1,10 +1,15 @@
 Rails.application.routes.draw do
   scope "(:locale)", locale: /en|vi/ do
     resources :users
-    get 'static_pages/home'
-    get 'static_pages/help'
+    resources :session
+    get 'home' , to:"static_pages#home"
+    get 'help' , to:"static_pages#help"
     get "/signup", to: "users#new"
     post "/signup", to: "users#create"
+    post "/login", to:"sessions#create"
+    get "/login", to:"sessions#new"
+    delete "/logout", to:"sessions#destroy"
+    root to: "static_pages#home"
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
