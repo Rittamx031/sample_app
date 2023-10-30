@@ -1,0 +1,30 @@
+<p style="color: green"><%= notice %></p>
+
+<h1><%= t("user_tile")%></h1>
+<%= link_to t("add_new_user"), new_user_path ,class: "btn btn-primary" %>
+<div id="users">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col"><%= t("name_field")%></th>
+      <th scope="col"><%= t("email_field")%></th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+   <% @users.each do |user| %>
+    <tr>
+      <td>
+         <%= gravatar_for(user)%>
+      </td>
+      <td><%= user.name %></td>
+      <td><%= user.email %></td>
+      <td class="d-flex">
+        <%= link_to t("show_this_user"), user,class: "btn btn-success" %>
+      </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+</div>
