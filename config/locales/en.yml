@@ -68,3 +68,18 @@ en:
     welcome_message: "Welcome to the Sample App, %{name}!"
     activation_instructions: "Click on the following link to activate your account:"
     activenow: "Click Here"
+  password_reset:
+    title: "Forgot password"
+    label_email: "Email"
+    submit_button: "Submit"
+    email_sent: "Email sent with password reset instructions"
+    email_not_found: "Email address not found"
+    cannot_empty: "Password cannot blank"
+  password_reset_form:
+    title: "Reset password"
+    password_label: "Password"
+    password_confirmation_label: "Confirmation"
+    submit_button: "Update password"
+  user_not_found: "User not found!"
+  user_inactive: "User is inactive!"
+  password_reset_expired: "Password reset has expired."

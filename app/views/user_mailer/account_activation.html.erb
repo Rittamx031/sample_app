@@ -4,13 +4,13 @@
 <body>
   <div class="container">
     <div class="jumbotron">
-      <h1 class="display-4"><%= t('email_activation.subject') %></h1>
-      <p class="lead"><%= t('email_activation.intro', name: @user.name) %></p>
+      <h1 class="display-4"><%= t("email_activation.subject") %></h1>
+      <p class="lead"><%= t("email_activation.intro", name: @user.name) %></p>
       <hr class="my-4">
-      <p><%= t('email_activation.activation_link') %></p>
+      <p><%= t("email_activation.activation_link") %></p>
       <%= link_to t("email_activation.activenow"),
-       edit_account_activation_url(
-      id: @user.activation_digest,
+       account_activation_url(
+      id: @user.activation_token,
       email: @user.email) %>
     </div>
   </div>

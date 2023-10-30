@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    log_out # Custom method to log out the user
+    log_out
     redirect_to root_path, notice: t("logged_out")
   end
 
@@ -20,9 +20,9 @@ class SessionsController < ApplicationController
     log_in(@user)
     if @user.activated
       reset_session
-      remember @user
       params.dig(:session, :remember_me) ? remember(@user) : forget(@user)
     else
+      @user.reset_activation_digest
       @user.send_activation_email
       flash[:danger] = t("account_not_actived")
     end

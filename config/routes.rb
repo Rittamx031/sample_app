@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
-  get "sessions/new"
-  get "sessions/create"
-  get "sessions/destroy"
   scope "(:locale)", locale: /en|vi/ do
     resources :users
     resources :session
-    resources :account_activations
+    resources :account_activations, only: [:edit]
+    resources :password_resets, only: %i(new create edit update)
     get "home", to:"static_pages#home"
+    get "account_activation", to: "account_activations#edit", as: "account_activation"
+    get "resetpassword", to: "password_resets#edit", as: "reset_password"
     get "help", to:"static_pages#help"
     get "/signup", to: "users#new"
     post "/signup", to: "users#create"
