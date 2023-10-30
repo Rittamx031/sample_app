@@ -144,6 +144,7 @@ I18n.translations["en"] = I18n.extend((I18n.translations["en"] || {}), {
     "welcome_message": "Welcome to the Sample App, %{name}!"
   },
   "email_field": "Email Address",
+  "en": null,
   "errors": {
     "connection_refused": "Oops! Failed to connect to the Web Console middleware.\nPlease make sure a rails development server is running.\n",
     "format": "%{attribute} %{message}",
@@ -77223,10 +77224,7 @@ I18n.translations["en"] = I18n.extend((I18n.translations["en"] || {}), {
     "oversize": "should be less than 5MB",
     "validimage": "must be a valid image format"
   },
-<<<<<<< HEAD
   "micropost_feed": "Micropost Feed",
-=======
->>>>>>> 266fa59 (chapter13)
   "name_field": "Name",
   "navbar": {
     "help": "Help",
@@ -77322,10 +77320,7 @@ I18n.translations["en"] = I18n.extend((I18n.translations["en"] || {}), {
     "title": "Reset password"
   },
   "placeholder_post_message": "Compose new micropost...",
-<<<<<<< HEAD
   "post": "Post",
-=======
->>>>>>> 266fa59 (chapter13)
   "posted_ago": "Posted %{time_ago} ago.",
   "profile": "Profile",
   "rememberme": "Remember me",
@@ -77381,7 +77376,17 @@ I18n.translations["en"] = I18n.extend((I18n.translations["en"] || {}), {
   "user_inactive": "User is inactive!",
   "user_not_found": "User not found!",
   "user_tile": "Users",
+  "users": {
+    "show": {
+      "microposts": "Microposts",
+      "user_profile": "Profile for %{name}",
+      "view_profile": "View my profile"
+    }
+  },
   "view_if": "view my profile",
   "welcome": "Welcome to that's App rails mail",
-  "you_sure": "Are you sure"
+  "you_sure": "Are you sure",
+  "your_controller_name": {
+    "title": "Your Title Translation"
+  }
 });

@@ -109,3 +109,17 @@ vi:
   placeholder_post_message: "Viết thêm suy nghĩ của bạn..."
   post: "Đăng"
   micropost_feed: "Bài đăng"
+  users:
+    show:
+      user_profile: "Profile for %{name}"
+      view_profile: "View my profile"
+      microposts: "Microposts"
+  your_controller_name:
+    title: "Your Title Translation"
+    follow_button: "Follow"
+     unfollow_button: "Unfollow"
+  relationships:
+  create:
+    follow_success: "You are now following this user."
+  destroy:
+    unfollow_success: "You have unfollowed this user."

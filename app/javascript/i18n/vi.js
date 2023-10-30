@@ -35,6 +35,7 @@ I18n.translations["vi"] = I18n.extend((I18n.translations["vi"] || {}), {
     "welcome_message": "Chào mừng tới App, %{name}!"
   },
   "email_field": "Địa chỉ Email",
+  "en": null,
   "errors": {
     "messages": {
       "aspect_ratio_is_not": "phải có tỉ lệ ảnh %{aspect_ratio}",
@@ -533,10 +534,7 @@ I18n.translations["vi"] = I18n.extend((I18n.translations["vi"] || {}), {
     "title": "Đặt lại mật khẩu"
   },
   "placeholder_post_message": "Viết thêm suy nghĩ của bạn...",
-<<<<<<< HEAD
   "post": "Đăng",
-=======
->>>>>>> 266fa59 (chapter13)
   "posted_ago": "Đăng lên %{time_ago} trước.",
   "profile": "Thông tin cá nhân",
   "rememberme": "Lưu thông tin đăng nhập",
@@ -574,7 +572,17 @@ I18n.translations["vi"] = I18n.extend((I18n.translations["vi"] || {}), {
   "user_deleted": "xóa thành công user",
   "user_inactive": "Người dùng không hoạt động!",
   "user_not_found": "Không tìm thấy người dùng!",
+  "users": {
+    "show": {
+      "microposts": "Microposts",
+      "user_profile": "Profile for %{name}",
+      "view_profile": "View my profile"
+    }
+  },
   "view_if": "Xem tài khoản của bạn",
   "welcome": "Chào mừng bạn đế với app của thật",
-  "you_sure": "Bạn chắc chứ"
+  "you_sure": "Bạn chắc chứ",
+  "your_controller_name": {
+    "title": "Your Title Translation"
+  }
 });

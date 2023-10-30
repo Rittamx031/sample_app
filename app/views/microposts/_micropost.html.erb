@@ -6,11 +6,7 @@
    <%= image_tag micropost.picture.variant(:display) %>
   <% end %>
   <span class="timestamp">
-<<<<<<< HEAD
     <%=t("posted_ago", time_ago: time_ago_in_words(micropost.created_at)) %>
-=======
-    <%=t('posted_ago', time_ago: time_ago_in_words(micropost.created_at)) %>
->>>>>>> 266fa59 (chapter13)
     <% if current_user?(micropost.user) %>
      <%= link_to t("delete"), micropost, data: { "turbo-method": :delete, turbo_confirm: t("you_sure") } %>
     <% end %>

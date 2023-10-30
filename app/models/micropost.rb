@@ -16,11 +16,11 @@ class Micropost < ApplicationRecord
   validates :content, presence: true, length: {maximum: Settings.digit_140}
   validates :picture,
             content_type: {
-              in: %w(image/jpeg image/gif image/png),
-              message: I18n.t("micropost.validimage")
+              in: %w(image/jpeg image/gif image/png)
+              # message: I18n.t("micropost.validimage")
             },
             size: {
-              less_than: Settings.limit_store_size.megabytes,
-              message: I18n.t("micropost.oversize")
+              less_than: Settings.limit_store_size.megabytes
+              # message: I18n.t("micropost.oversize")
             }
 end

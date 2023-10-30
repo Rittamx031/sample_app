@@ -8,7 +8,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @page, @feed_items = pagy(@user.microposts.recent_posts,
+    @page, @feed_items = pagy(@user.feed,
                               items: Settings.items_in_page)
   end
 
@@ -51,6 +51,17 @@ class UsersController < ApplicationController
     redirect_to users_path
   end
 
+  def following
+    @title = t "following"
+    @pagy, @users = pagy @user.following, items: Settings.items_pagination
+    render :show_follow
+  end
+
+  def followers
+    @title = t "followers"
+    @pagy, @users = pagy @user.followers, items: Settings.items_pagination
+    render :show_follow
+  end
   private
 
   def load_user

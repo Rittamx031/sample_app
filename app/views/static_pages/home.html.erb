@@ -3,26 +3,25 @@
   <div class="row">
     <aside class="col-md-4">
       <section class="user_info">
-<<<<<<< HEAD
-        <%= render "shared/user_info" %>
+          <%= render "shared/user_info" %>
+      </section>
+      <section class="stats">
+        <%= render "shared/stats" %>
+        <% if @users %>
+        <div class="user_avatars">
+          <% @users.each do |user| %>
+            <%= link_to gravatar_for(user, size: 30), user %>
+          <% end %>
+        </div>
+      <% end %>
       </section>
       <section class="micropost_form">
         <%= render "shared/micropost_form" %>
-=======
-        <%= render 'shared/user_info' %>
-      </section>
-      <section class="micropost_form">
-        <%= render 'shared/micropost_form' %>
->>>>>>> 266fa59 (chapter13)
       </section>
     </aside>
     <div class="col-md-8">
       <h3><%= t("micropost_feed")%></h3>
-<<<<<<< HEAD
       <%= render "shared/feed" %>
-=======
-      <%= render 'shared/feed' %>
->>>>>>> 266fa59 (chapter13)
     </div>
   </div>
 <% else %>

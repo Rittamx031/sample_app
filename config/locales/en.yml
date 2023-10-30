@@ -103,3 +103,17 @@ en:
   placeholder_post_message: "Compose new micropost..."
   post: "Post"
   micropost_feed: "Micropost Feed"
+  users:
+    show:
+      user_profile: "Profile for %{name}"
+      view_profile: "View my profile"
+      microposts: "Microposts"
+  users:
+    title: "Your Title Translation"
+    follow_button: "Follow"
+     unfollow_button: "Unfollow"
+  relationships:
+    create:
+      follow_success: "You are now following this user."
+    destroy:
+      unfollow_success: "You have unfollowed this user."

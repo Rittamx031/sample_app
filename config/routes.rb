@@ -2,9 +2,15 @@ Rails.application.routes.draw do
   scope "(:locale)", locale: /en|vi/ do
     resources :users
     resources :session
-    resources :account_activations, only: [:edit]
+    resources :account_activations, only: %i(:edit)
     resources :password_resets, only: %i(new create edit update)
-    resources :microposts,          only: [:create, :destroy]
+    resources :microposts, only: [:create, :destroy]
+    resources :relationships, only: [:create, :destroy]
+    resources :users do
+      member do
+        get :following, :followers
+      end
+    end
     get "home", to:"static_pages#home"
     get "account_activation", to: "account_activations#edit", as: "account_activation"
     get "resetpassword", to: "password_resets#edit", as: "reset_password"
