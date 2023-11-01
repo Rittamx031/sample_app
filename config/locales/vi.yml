@@ -1,22 +1,37 @@
 vi:
   title:
-    commontitle: 'Hướng dẫn cơ bản với Rails'
-    home: 'Trang chủ'
-    help: 'Trợ giúp'
-    header: 'Ứng dụng đơn giản'
+    commontitle: "Hướng dẫn cơ bản với Rails"
+    home: "Trang chủ"
+    help: "Trợ giúp"
+    header: "Ứng dụng đơn giản"
   navbar:
-    home: 'Trang chủ'
-    help: 'Trợ giúp'
-    login: 'Đăng Nhập'
+    home: "Trang chủ"
+    help: "Trợ giúp"
+    login: "Đăng Nhập"
   user:
     home:
-      wellcomheader: 'Chào mừng đến với App siu đơng giản'
-      singupnow: 'Đăng ký ngay bây giờ !'
-      projectname: 'Hướng dẫn Ruby on Rails'
-      pagefor : 'Đây là trang chủ của'
-      simpleapp: 'ứng dụng hướng dẫn'
+      wellcomheader: "Chào mừng đến với App siu đơng giản"
+      singupnow: "Đăng ký ngay bây giờ !"
+      projectname: "Hướng dẫn Ruby on Rails"
+      pagefor : "Đây là trang chủ của"
+      simpleapp: "ứng dụng hướng dẫn"
     help:
-      gethelpform: 'Lấy hướng dẫn tutorial tại'
-      linkgethelp: 'Trang hướng dẫn Rails'
-      getsplapp: 'Lấy sách về ứng dụng rails đươn giản tại'
-      linkbook: 'Sách Ruby on Rails Tutorial'
+      gethelpform: "Lấy hướng dẫn tutorial tại"
+      linkgethelp: "Trang hướng dẫn Rails"
+      getsplapp: "Lấy sách về ứng dụng rails đươn giản tại"
+      linkbook: "Sách Ruby on Rails Tutorial"
+  sign_up: "Đăng Ký"
+  sign_in: "Đăng Nhập"
+  name_field: "Tên"
+  email_field: "Địa chỉ Email"
+  password: "Mật khẩu"
+  password_repeat: "Nhập lại mật khẩu"
+  success_sign_up: "Đăng ký thành công"
+  total_error: "lỗi khi bạn gửi form"
+  back_to_users: "Danh sách Người dùng"
+  update_user : "Cập nhật thông tin người dùng"
+  deleted_user : "Xóa"
+  show_this_user : "Xem"
+  add_new_user : "Thêm nguời dùng"
+  detail_title: "Thông tin chi tiết"
+  user_tile : "nguời dùng"

@@ -1,0 +1,24 @@
+<% provide :title, t("detail_title") %>
+<p style="color: green"><%= notice %></p>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1>
+         <%= gravatar_for(@user)%>
+        <p>
+          <strong><%= t("name_field")%></strong>
+          <%= @user.name %>
+        </p>
+        <p>
+          <strong><%= t("email_field")%></strong>
+          <%= @user.email %>
+        </p>
+      </h1>
+    </section>
+  </aside>
+
+</div>
+
+<div>
+  <%= link_to t("back_to_users"), users_path ,class: "btn btn-primary"%>
+</div>
