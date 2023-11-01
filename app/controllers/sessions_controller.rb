@@ -3,9 +3,14 @@ class SessionsController < ApplicationController
   def new; end
 
   def create
-    if @user&.authenticate(params.dig(:session, :password))
+    if @user.try(:authenticate, params.dig(:session, :password))
       reset_session # Reset the session to prevent session fixation attacks
       log_in(@user) # Custom method to log in the user
+      if params.dig(:session, :remember_me)
+        remember(@user)
+      else
+        forget(@user)
+      end
       redirect_to @user, status: :see_other
     else
       flash.now[:danger] = t("invalid_email_password_combination")
