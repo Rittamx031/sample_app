@@ -45,3 +45,7 @@ en:
   profile: "Profile"
   not_found_user: "User not exits!!!"
   rememberme: "Remember me"
+  not_correct_user: "You can do that on this user"
+  user_deleted: "user haved been deleted successfully!"
+  delete_fail: "Cann't delete user, try again!"
+  confirm: "You want to continue"

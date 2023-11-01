@@ -1,0 +1,7 @@
+<% provide(:title, t("update_user"))%>
+<h1><%= t("update_user") %></h1>
+<%= render 'form', submit_text: t("update_user") %>
+<div class="gravater_edit">
+  <%= gravatar_for(@user)%>
+  <a href="">Change</a>
+</div>

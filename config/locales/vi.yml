@@ -52,3 +52,7 @@ vi:
   profile: "Thông tin cá nhân"
   not_found_user: "Tài khoản không tồn tại"
   rememberme: "Lưu thông tin đăng nhập"
+  not_correct_user: "Sử dụng tài đúng tài khoản để  tiếp tục"
+  user_deleted: "xóa thành công user"
+  delete_fail: "Xóa không thành công"
+  confirm: "Bạn muốn tiếp tục chứ?"

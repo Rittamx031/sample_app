@@ -3,6 +3,8 @@ class User < ApplicationRecord
 
   scope :sorted_by_name, ->{order(:name)}
 
+  validates :password, presence: true,
+    length: {minimum: Settings.min_length_password}, allow_nil: true
   validates :name, presence: true, length: {maximum: Settings.max_name_length}
   validates :email, presence: true,
     length: {maximum: Settings.max_email_length},
