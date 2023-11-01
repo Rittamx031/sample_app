@@ -74,9 +74,7 @@ input,textarea,select, .uneditable-input{
 input {
   height: auto !important;
 }
-
-form {
-  input{
-    display: block;
-  }
+.dropdown-menu.active
+{
+  display: block;
 }
