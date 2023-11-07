@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
       else
         forget(@user)
       end
-      redirect_to @user, status: :see_other
+      redirect_back_or user
     else
       flash.now[:danger] = t("invalid_email_password_combination")
       render :new, status: :unprocessable_entity

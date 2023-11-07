@@ -7,6 +7,7 @@ gem "byebug"
 gem "jquery-rails"
 
 gem "config"
+gem "pagy"
 gem "sassc-rails"
 # add gem bcrypt
 gem "bcrypt", "~> 3.1", ">= 3.1.12"
