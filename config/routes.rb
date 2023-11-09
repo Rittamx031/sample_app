@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
+  get "sessions/new"
+  get "sessions/create"
+  get "sessions/destroy"
   scope "(:locale)", locale: /en|vi/ do
     resources :users
     resources :session
+    resources :account_activations
     get "home", to:"static_pages#home"
     get "help", to:"static_pages#help"
     get "/signup", to: "users#new"
