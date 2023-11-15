@@ -7,7 +7,10 @@ class UsersController < ApplicationController
     @users = User.sorted_by_name
   end
 
-  def show; end
+  def show
+    @page, @feed_items = pagy(@user.microposts.newest,
+                              items: Settings.items_in_page)
+  end
 
   def new
     @user = User.new

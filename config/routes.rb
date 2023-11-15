@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     resources :session
     resources :account_activations, only: [:edit]
     resources :password_resets, only: %i(new create edit update)
+    resources :microposts,          only: [:create, :destroy]
     get "home", to:"static_pages#home"
     get "account_activation", to: "account_activations#edit", as: "account_activation"
     get "resetpassword", to: "password_resets#edit", as: "reset_password"

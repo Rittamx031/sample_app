@@ -1,16 +1,17 @@
 source "https://rubygems.org"
 git_source(:github){|repo| "https://github.com/#{repo}.git"}
 ruby "3.2.2"
-
 gem "bootstrap-sass", "3.4.1"
 gem "byebug"
 gem "config"
 gem "pagy"
 gem "sassc-rails"
 # add gem bcrypt
+gem "active_storage_validations", "0.9.8"
 gem "bcrypt", "~> 3.1", ">= 3.1.12"
 gem "faker"
-gem "rails-i18n"
+gem "i18n-js", "~>3.9.2", ">= 3.9.2"
+gem "image_processing", "1.12.2"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "pry-rails"
 gem "rails", "~> 7.0.5"

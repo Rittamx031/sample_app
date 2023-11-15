@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :microposts, class_name: Micropost.name, dependent: :destroy
   before_save :downcase_email
   before_create :create_activation_digest
 
@@ -71,6 +72,10 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at > Settings.timeout.hours.ago
+  end
+
+  def feed
+    microposts
   end
   private
 

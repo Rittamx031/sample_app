@@ -83,3 +83,23 @@ en:
   user_not_found: "User not found!"
   user_inactive: "User is inactive!"
   password_reset_expired: "Password reset has expired."
+  micropost:
+    created: "Micropost created!"
+    deleted: "Micropost deleted"
+    deleted_fail: "Deleted fail"
+    validimage: "must be a valid image format"
+    oversize: "should be less than 5MB"
+  activerecord:
+  errors:
+    messages:
+      record_invalid: "Not Valid"
+  posted_ago: 'Posted %{time_ago} ago.'
+  datetime:
+    distance_in_words:
+      x_minutes: "about %{count} minutes"
+  you_sure: "Are you sure"
+  alert_limit_size: "File Must not over 5MB"
+  view_if: "view my profile"
+  placeholder_post_message: "Compose new micropost..."
+  post: "Post"
+  micropost_feed: "Micropost Feed"
