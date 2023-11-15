@@ -1,12 +1,20 @@
 class User < ApplicationRecord
   has_many :microposts, class_name: Micropost.name, dependent: :destroy
+  has_many :active_relationships, class_name: Relationship.name,
+           foreign_key: :follower_id, dependent: :destroy
+  has_many :passive_relationships, class_name: Relationship.name,
+           foreign_key: :followed_id, dependent: :destroy
+  has_many :following, through: :active_relationships, source: :followed
+  has_many :followers, through: :passive_relationships, source: :follower
+
   before_save :downcase_email
   before_create :create_activation_digest
 
   scope :sorted_by_name, ->{order(:name)}
 
   validates :name, presence: true, length: {maximum: Settings.max_name_length}
-  validates :email, presence: true, length: {maximum: Settings.max_email_length},
+  validates :email, presence: true, length:
+                    {maximum: Settings.max_email_length},
                     format: {with: Regexp.new(Settings.email_regex)},
                     uniqueness: {case_sensitive: Settings.case_sensitive_email}
   validates :password, presence: true,
@@ -29,6 +37,18 @@ class User < ApplicationRecord
     def new_token
       SecureRandom.urlsafe_base64
     end
+  end
+
+  def follow other_user
+    following << other_user
+  end
+
+  def unfollow other_user
+    following.delete(other_user) if other_user.present?
+  end
+
+  def following? other_user
+    following.include?(other_user)
   end
 
   def remember
@@ -75,8 +95,9 @@ class User < ApplicationRecord
   end
 
   def feed
-    microposts
+    microposts.relate_post(following_ids << id).includes(:user)
   end
+
   private
 
   def downcase_email

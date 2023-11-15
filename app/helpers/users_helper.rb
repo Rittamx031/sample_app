@@ -5,4 +5,12 @@ module UsersHelper
     gravatar_url = Settings.image_user
     image_tag gravatar_url, alt: user.name, class: "gravatar"
   end
+
+  def create_relationship current_user
+    current_user.active_relationships.build
+  end
+
+  def find_relationship current_user
+    current_user.active_relationships.find_by(followed_id: @user.id)
+  end
 end

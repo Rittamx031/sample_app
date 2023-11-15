@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
   scope "(:locale)", locale: /en|vi/ do
+    resources :users, except: %i(new create) do
+      member do
+        get :following, :followers
+      end
+    end
+    resources :relationships, only: %i(create destroy)
     resources :users
     resources :session
     resources :account_activations, only: [:edit]

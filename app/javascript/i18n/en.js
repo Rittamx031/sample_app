@@ -77200,6 +77200,10 @@ I18n.translations["en"] = I18n.extend((I18n.translations["en"] || {}), {
       ]
     }
   },
+  "follow": "follow",
+  "follow_success": "follow success",
+  "followers": "Followers",
+  "following": "Following",
   "helpers": {
     "select": {
       "prompt": "Please select"
@@ -77354,6 +77358,8 @@ I18n.translations["en"] = I18n.extend((I18n.translations["en"] || {}), {
     "home": "Home"
   },
   "total_error": "Errors validate in your submit",
+  "unfollow": "unfollow",
+  "unfollow_success": "unfollow success",
   "update_success": "Update user successfully",
   "update_user": "Update this user",
   "user": {

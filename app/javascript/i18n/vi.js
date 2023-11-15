@@ -492,6 +492,10 @@ I18n.translations["vi"] = I18n.extend((I18n.translations["vi"] || {}), {
       ]
     }
   },
+  "follow": "theo dõi",
+  "follow_success": "Theo dõi thành công",
+  "followers": "Followers",
+  "following": "Following",
   "hrefActive": "Kích hoạt tại đây",
   "invalid_email_password_combination": "Kiểm tra lại tài khoản mật khẩu ",
   "logged_out": "Đăng xuất",
@@ -551,6 +555,8 @@ I18n.translations["vi"] = I18n.extend((I18n.translations["vi"] || {}), {
     "home": "Trang chủ"
   },
   "total_error": "lỗi khi bạn gửi form",
+  "unfollow": "Hủy theo dõi",
+  "unfollow_success": "Hủy theo dõi thành công",
   "update_success": "Cập nhật người dùng thành công",
   "update_user": "Cập nhật thông tin người dùng",
   "user": {
