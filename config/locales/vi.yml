@@ -99,7 +99,7 @@ vi:
     errors:
       messages:
         record_invalid: "Không hợp lệ"
-  posted_ago: 'Đăng lên %{time_ago} trước.'
+  posted_ago: "Đăng lên %{time_ago} trước."
   datetime:
     distance_in_words:
       x_minutes: "cách đây %{count} phút"
@@ -109,3 +109,9 @@ vi:
   placeholder_post_message: "Viết thêm suy nghĩ của bạn..."
   post: "Đăng"
   micropost_feed: "Bài đăng"
+  follow_success: "Theo dõi thành công"
+  unfollow_success: "Hủy theo dõi thành công"
+  unfollow: "Hủy theo dõi"
+  follow: "theo dõi"
+  following: "Following"
+  followers: "Followers"
